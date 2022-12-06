@@ -1,5 +1,6 @@
-[
+export const Users = [
     {
+        "id": 1,
         "nom": "Pont",
         "prenom": "Pierre",
         "mail": "pierrepont@gmail.fr",
@@ -7,6 +8,7 @@
         "status": "moderateur"
     },
     {
+        "id": 2,
         "nom": "Nini",
         "prenom": "Toto",
         "mail": "totonini@gmail.fr",
@@ -14,6 +16,7 @@
         "status": "formateur"
     },
     {
+        "id": 3,
         "nom": "Combe",
         "prenom": "Benoit",
         "mail": "benoitcombe@gmail.fr",
@@ -21,6 +24,7 @@
         "status": "stagiaire"
     },
     {
+        "id": 4,
         "nom": "Letellier",
         "prenom": "Maxime",
         "mail": "maximeletellier@gmail.fr",
@@ -28,6 +32,7 @@
         "status": "stagiaire"
     },
     {
+        "id": 5,
         "nom": "Dubuis",
         "prenom": "Simon",
         "mail": "simondubuis@gmail.fr",

@@ -8,19 +8,30 @@ export default class LogsComp extends Component {
         super(props)
         this.state = {
             isActive: true,
+            activeUser: [],
         }
+    }
+    changeActiveUser = (user) => {
+        this.setState ({
+            activeUser: user
+        })
+    }
+    changeIsActive = () => {
+        this.setState ({
+            isActive: !this.state.isActive
+        })
     }
     render() {
         return this.state.isActive ? (
             <div className='formContainer row justify-content-center'>
-                <div className='col col-3 my-4'>
-                    <SignInComp isActive={this.state.isActive} />
+                <div className='col col-sm-11 col-md-8 col-lg-5 col-xl-4 col-xxl-3 my-4'>
+                    <LoginComp changeActiveUser={this.changeActiveUser} changeIsActive={this.changeIsActive} />
                 </div>
             </div>
         ) : (
             <div className='formContainer row justify-content-center'>
-                <div className='col col-3 my-4'>
-                    <LoginComp />
+                <div className='col col-sm-11 col-md-8 col-lg-5 col-xl-4 col-xxl-3 my-4'>
+                    <SignInComp />
                 </div>
             </div >
         )
