@@ -6,20 +6,20 @@ class NavBarComp extends Component {
 
     render() {
         return (
-            <div id="navBarContainer">
+            <div className="navBarContainer">
                 <ul>
-                    <div>
+                    <div className='navItem'>
                         <li>
                             <Link to="/">Home</Link>
                         </li>
                     </div>
-                    <div>
+                    <div className='navItem'>
                         <li>
                             <Link to="/formation">Formations</Link>
                         </li>
                     </div>
-                    <div>
-                       Connect<PersonFill/>
+                    <div className='navItem iconConnection'>
+                    <Link to="/formation"><PersonFill />connect</Link>
                     </div>
 
                 </ul>
