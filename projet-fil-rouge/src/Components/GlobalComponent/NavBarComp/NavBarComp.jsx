@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {PersonFill} from 'react-bootstrap-icons'
+import { PersonFill } from 'react-bootstrap-icons'
 import './NavBarComp.css'
 class NavBarComp extends Component {
 
@@ -18,10 +18,16 @@ class NavBarComp extends Component {
                             <Link to="/formation">Formations</Link>
                         </li>
                     </div>
-                    <div className='navItem iconConnection'>
-                    <Link to="/formation"><PersonFill />connect</Link>
+                    <div className='navItemBoxIcon'>
+                        <div className='navItemIconText'>
+                            <div className='iconConnection'>
+                                <Link to="/formation"><PersonFill className='navIcon' /></Link>
+                            </div>
+                            <div>
+                                <div className='navIconText'>Se connecter</div>
+                            </div>
+                        </div>
                     </div>
-
                 </ul>
             </div>
         );

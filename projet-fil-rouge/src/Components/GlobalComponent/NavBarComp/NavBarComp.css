@@ -1,26 +1,81 @@
 .navBarContainer {
-    background-color: red;
+    background-color: #001D3D;
     width: 100%;
-    height: 10vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
 }
-  
-ul{
+
+ul {
     list-style: none;
     display: flex;
-justify-content: center;
-align-content: center;
+    justify-content: center;
+    align-items: center;
+
     margin: 0;
+    padding: 0;
     width: 100%;
-    background-color: pink;
+    height: 100%;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+
+}
+li>a:hover {
+    text-decoration: none;
+    color:#FFD60A;
 
 }
 
-.navItem{
-    background-color: green;
-   width: 30%;
-   height: 100%;
+
+.navItem {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.iconConnection{
-    
+
+.navItemBoxIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 32%;
+}
+
+.navItemIconText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+.navItemIconText:hover {
+    color:#FFD60A;
+ }
+
+/* Icon de la bar de nav */
+.navIcon {
+    color: white;
+    font-size: 3rem;  
+}
+.navIcon:hover {
+    color:#FFD60A;
+    font-size: 3rem;  
+}
+
+
+.navIconText {
+    font-size: x-small;
+
+
 }
