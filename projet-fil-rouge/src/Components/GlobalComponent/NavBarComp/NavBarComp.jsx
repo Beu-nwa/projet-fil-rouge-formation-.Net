@@ -21,7 +21,7 @@ class NavBarComp extends Component {
                     <div className='navItemBoxIcon'>
                         <div className='navItemIconText'>
                             <div className='iconConnection'>
-                                <Link to="/formation"><PersonFill className='navIcon' /></Link>
+                                <Link to="/log"><PersonFill className='navIcon' /></Link>
                             </div>
                             <div>
                                 <div className='navIconText'>Se connecter</div>
