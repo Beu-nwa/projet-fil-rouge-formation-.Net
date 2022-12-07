@@ -74,7 +74,7 @@ class NavBarComp extends Component {
                                     </button>
                                 </div>
                             </div>
-
+                    </div>
                         </ul>
                     </div>
                 ) :
