@@ -1,8 +1,8 @@
 
 .card {
-    display: flex;
+
     height: 300px;
-    width: 300px;
+    width: 100%;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     box-shadow: 0 0 15px 8px #c4c4c4;
     
@@ -16,13 +16,13 @@
     border-radius: 1em 1em 1em 1em;
     border : solid 1px #001d3d ;
     background: #0a3394;
-    background: linear-gradient(to top, #003566, #00b4d8);
+    background: linear-gradient(to top,#00b4d8, #003566);
+    color: white;
+    font-size: 17px;
+    font-weight: 450;
 }
 
-.infoForma {
-    padding: 1px;
-    color: #fdfdfd;
-}
+
 
 hr {
     margin: 1px;
@@ -35,6 +35,7 @@ hr {
     flex-direction: column;
     background-color: #f5f5f5;
     height: 240px;
+    width: 100%;
     bottom: 0;
     border-radius: 1em 1em 1em 1em;
     border-left: solid 1px #001d3d;
@@ -56,7 +57,7 @@ hr {
 
 
 .card:hover .card-description {
-    transform: translateY(83%);
+    transform: translateY(45%);
 }
 
 .btn-post,
@@ -88,14 +89,14 @@ hr {
 .card:hover .btn-post {
     display: inline-block;
     background-color: orange;
-    border: none;
+    border: solid 1px rgb(70, 70, 70);
     border-radius: 1em;
 }
 
 .card:hover .btn-cart {
     display: inline-block;
     background-color: orange;
-    border: none;
+    border: solid 1px rgb(70, 70, 70);
     border-radius: 1em;
 }
 
