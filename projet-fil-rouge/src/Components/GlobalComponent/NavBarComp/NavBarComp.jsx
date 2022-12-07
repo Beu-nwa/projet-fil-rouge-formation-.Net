@@ -11,9 +11,7 @@ class NavBarComp extends Component {
     render() {
 
         return (
-            console.log(this.props.activeUser[0].status),
             this.props.activeUser[0].status === "moderateur" ? (
-
                 //Condition pour afficher la navBar en fonction du status de l'utilisateur         
                 <div className="navBarContainer">
                     <ul>
@@ -37,10 +35,10 @@ class NavBarComp extends Component {
                             <div className='navItemIconText'>
                                 <div className='iconConnection'>
 
-                                    <button><Link to="/log"><PersonFill className='navIcon' /></Link>
+
+                                    <button><Link to="/log"><PersonFillX className='navIcon' /></Link>
                                     <div className='navIconText'>Se deconnecter</div>
                                     </button>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -69,20 +67,17 @@ class NavBarComp extends Component {
                             </div>
 
                             <div className='navItemBoxIcon'>
-                            <div className='navItemIconText'>
-                                <div className='iconConnection'>
-
-                                    <button><Link to="/log"><PersonFill className='navIcon' /></Link>
+                                <div className='navItemIconText'>
+                                    <div className='iconConnection'>
+                                    <button><Link to="/log"><PersonFillX className='navIcon' /></Link>
                                     <div className='navIconText'>Se deconnecter</div>
                                     </button>
-                                    
                                 </div>
                             </div>
-                        </div>
-
+                    </div>
                         </ul>
                     </div>
-                ) : 
+                ) :
                 ////////////////////NavBar par default (visiteur)
                 <div className="navBarContainer">
                     <ul>
@@ -102,15 +97,15 @@ class NavBarComp extends Component {
                                 <div className='iconConnection'>
 
                                     <button><Link to="/log"><PersonFill className='navIcon' /></Link>
-                                    <div className='navIconText'>Se connecter</div>
+                                        <div className='navIconText'>Se connecter</div>
                                     </button>
-                                    
+
                                 </div>
                             </div>
                         </div>
                     </ul>
                 </div>
-                
+
         );
     }
 
