@@ -8,9 +8,9 @@ class HeaderComp extends Component {
     }
     render() {
         return (
-            <div>
+            <header>
                 <NavBarComp activeUser={this.props.activeUser} />
-            </div>
+            </header>
         );
     }
 }
