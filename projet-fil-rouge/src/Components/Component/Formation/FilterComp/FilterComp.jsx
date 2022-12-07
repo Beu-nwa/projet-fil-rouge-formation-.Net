@@ -17,11 +17,10 @@ export default class FilterComp extends Component {
                     <option value="default">Catégories...</option>
                     {
                         formations.map((x, index) => {
-
-                            return !this.state.formationList.includes(x)? (
-                            <option value={index} key={index} >{x.category} </option>,
-                            this.state.formationList.push(x)
-                            ) : null
+                            return !this.state.formationList.includes(x.category) ? (
+                                this.state.formationList.push(x.category),
+                                <option value={index} key={index} >{x.category} </option>
+                            ) : null;
                         })
                     }
                 </select>
