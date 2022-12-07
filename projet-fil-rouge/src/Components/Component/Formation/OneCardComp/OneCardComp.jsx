@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import { formations } from '../../../../datas/formations';
 import './OneCardComp.css';
 
+///TODO Difficulté en fonction de la BDD
+
 export default class OneCardComp extends Component {
   render() {
     return (
@@ -26,7 +28,7 @@ export default class OneCardComp extends Component {
                   {forma.name}
                 </div>
                 <Link to='/formation/'>
-                  <button className='btn-post'> Plus de détails</button>
+                  <button className='btn-post'> Détails</button>
                 </Link>
                 <Link to='/cart'>
                   <button className='btn-cart'> Sauvegarder </button>
