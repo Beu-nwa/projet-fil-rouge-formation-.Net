@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import LogsComp from '../../Components/Component/Form/LogsComp/LogsComp';
 
-class LogView extends Component {
+export default class LogView extends Component {
     render() {
         return (
-            <div>
-                
+            <div id='logView'>
+                <LogsComp />
             </div>
-        );
+        )
     }
 }
-
-export default LogView;

@@ -10,6 +10,9 @@ import FormationView from './Views/FormationView/FormationView';
 import LogView from './Views/LogView/LogView';
 import Header from './Components/GlobalComponent/HeaderComp/HeaderComp';
 import Footer from './Components/GlobalComponent/FooterComp/FooterComp';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import LogView from './Views/LogView/LogView';
 
 class App extends Component {
   render() {
