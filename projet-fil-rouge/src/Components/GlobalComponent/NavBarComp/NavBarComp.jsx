@@ -6,15 +6,14 @@ import './NavBarComp.css'
 class NavBarComp extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            isActive: true,
-            activeUser: [],
-        }
     }
-    render() {
-        return (
 
-            this.state.activeUser === "moderateur" ? (
+    render() {
+
+        return (
+            console.log(this.props.activeUser[0].status),
+            this.props.activeUser[0].status === "moderateur" ? (
+
                 //Condition pour afficher la navBar en fonction du status de l'utilisateur         
                 <div className="navBarContainer">
                     <ul>
@@ -29,41 +28,26 @@ class NavBarComp extends Component {
                             </li>
                         </div>
                         <div className='navItem'>
-                                <li>
-                                    <a href="">Ajout Formation</a>   {/* <Link to="/formation">Profil</Link>  */}
-                                </li>
-                            </div>
-                        {
-                            this.state.activeUser.length === 0 ? (
+                            <li>
+                                <a href="">Ajout Formation</a>   {/* <Link to="/formation">Profil</Link>  */}
+                            </li>
+                        </div>
 
-                                <div className='navItemBoxIcon'>
-                                    <div className='navItemIconText'>
-                                        <div className='iconConnection'>
-                                            <Link to="/log"><PersonFill className='navIcon' /></Link>
-                                        </div>
-                                        <div>
-                                            <div className='navIconText'>Se connecter</div>
-                                        </div>
-                                    </div>
+                        <div className='navItemBoxIcon'>
+                            <div className='navItemIconText'>
+                                <div className='iconConnection'>
+                                    <Link to="/log"><PersonFillX className='navIcon' /></Link>
                                 </div>
-                            ) :
-                                (
-                                    <div className='navItemBoxIcon'>
-                                        <div className='navItemIconText'>
-                                            <div className='iconConnection'>
-                                                <Link to="/log"><PersonFillX className='navIcon' /></Link>
-                                            </div>
-                                            <div>
-                                                <div className='navIconText'>Se deconnecter</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                        }
+                                <div>
+                                    <div className='navIconText'>Se deconnecter</div>
+                                </div>
+                            </div>
+                        </div>
+
                     </ul>
                 </div>
                 /////////////////////////////////////////////si l'utilisitaeur est stagiaire ou formateur ///
-            ) : this.state.activeUser === "formateur" || "stagiaire" ?
+            ) : this.props.activeUser[0].status === "formateur" || this.props.activeUser[0].status === "stagiaire" ?
                 (
                     <div className="navBarContainer">
                         <ul>
@@ -82,36 +66,21 @@ class NavBarComp extends Component {
                                     <a href="">Profil</a>   {/* <Link to="/formation">Profil</Link>  */}
                                 </li>
                             </div>
-                            {
-                                this.state.activeUser.length === 0 ? (
 
-                                    <div className='navItemBoxIcon'>
-                                        <div className='navItemIconText'>
-                                            <div className='iconConnection'>
-                                                <Link to="/log"><PersonFill className='navIcon' /></Link>
-                                            </div>
-                                            <div>
-                                                <div className='navIconText'>Se connecter</div>
-                                            </div>
-                                        </div>
+                            <div className='navItemBoxIcon'>
+                                <div className='navItemIconText'>
+                                    <div className='iconConnection'>
+                                        <Link to="/log"><PersonFillX className='navIcon' /></Link>
                                     </div>
-                                ) :
-                                    (
-                                        <div className='navItemBoxIcon'>
-                                            <div className='navItemIconText'>
-                                                <div className='iconConnection'>
-                                                    <Link to="/log"><PersonFillX className='navIcon' /></Link>
-                                                </div>
-                                                <div>
-                                                    <div className='navIconText'>Se deconnecter</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                            }
+                                    <div>
+                                        <div className='navIconText'>Se deconnecter</div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </ul>
                     </div>
-                ) :
+                ) : 
                 ////////////////////NavBar par default (visiteur)
                 <div className="navBarContainer">
                     <ul>
@@ -125,39 +94,25 @@ class NavBarComp extends Component {
                                 <Link to="/formation">Formations</Link>
                             </li>
                         </div>
-                        {
-                            this.state.activeUser.length === 0 ? (
 
-                                <div className='navItemBoxIcon'>
-                                    <div className='navItemIconText'>
-                                        <div className='iconConnection'>
-                                            <Link to="/log"><PersonFill className='navIcon' /></Link>
-                                        </div>
-                                        <div>
-                                            <div className='navIconText'>Se connecter</div>
-                                        </div>
-                                    </div>
+                        <div className='navItemBoxIcon'>
+                            <div className='navItemIconText'>
+                                <div className='iconConnection'>
+                                    <Link to="/log"><PersonFill className='navIcon' /></Link>
                                 </div>
-                            ) :
-                                (
-                                    <div className='navItemBoxIcon'>
-                                        <div className='navItemIconText'>
-                                            <div className='iconConnection'>
-                                                <Link to="/log"><PersonFillX className='navIcon' /></Link>
-                                            </div>
-                                            <div>
-                                                <div className='navIconText'>Se deconnecter</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                        }
+                                <div>
+                                    <div className='navIconText'>Se connecter</div>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </div>
-
+                
         );
     }
+
 }
+
 
 export default NavBarComp;
 
