@@ -12,6 +12,7 @@ import Footer from './Components/GlobalComponent/FooterComp/FooterComp';
 import LogView from './Views/LogView/LogView';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import LogView from './Views/LogView/LogView';
 
 class App extends Component {
   render() {
