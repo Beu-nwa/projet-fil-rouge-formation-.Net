@@ -4,10 +4,9 @@ import OneCardComp from '../OneCardComp/OneCardComp';
 class CardsComp extends Component {
     render() {
         return (
-            <div>
+            <div className='col col-9'>
                 <OneCardComp />
             </div>
-            
         );
     }
 }

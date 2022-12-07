@@ -9,6 +9,7 @@ import HomeView from './Views/HomeView/HomeView';
 import FormationView from './Views/FormationView/FormationView';
 import Header from './Components/GlobalComponent/HeaderComp/HeaderComp';
 import Footer from './Components/GlobalComponent/FooterComp/FooterComp';
+import LogView from './Views/LogView/LogView';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import LogView from './Views/LogView/LogView';

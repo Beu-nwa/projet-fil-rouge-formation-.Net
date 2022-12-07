@@ -1,0 +1,5 @@
+.filterContainer{
+    background-color: var(--darkorange);
+    height: 100%;
+    opacity: 0.8;
+}
