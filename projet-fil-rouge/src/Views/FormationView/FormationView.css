@@ -1,6 +1,9 @@
-.cardsDisplay{
+.cardsDisplay .card{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-between;
     margin: 15px;
+    gap: 15px;
+
     
 }

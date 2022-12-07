@@ -5,7 +5,7 @@ import './FormationView.css'
 class FormationView extends Component {
     render() {
         return (
-            <div className='cardsDisplay'>
+            <div className='cardsDisplay' >
                 <CardsComp />
             </div>
         );
