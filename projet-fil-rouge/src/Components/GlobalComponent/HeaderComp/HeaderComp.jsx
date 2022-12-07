@@ -6,7 +6,7 @@ class HeaderComp extends Component {
     render() {
         return (
             <div>
-              <NavBarComp/>  
+                <NavBarComp />
             </div>
         );
     }

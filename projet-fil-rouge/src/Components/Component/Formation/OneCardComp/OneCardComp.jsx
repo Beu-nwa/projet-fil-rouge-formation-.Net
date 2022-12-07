@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './OneCardComp.css';
 import {StarFill} from 'react-bootstrap-icons';
 import {StarHalf} from 'react-bootstrap-icons';
-import { Link } from 'react-router-dom';
- 
 
 //TODO :::  Incrémenter prix date etc.. Avec BDD//
 
