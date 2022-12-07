@@ -7,7 +7,6 @@
     font-family: 'Comfortaa', cursive;
     font-size: 1.5rem;
     color: white;
-    position: absolute;
     border-bottom: 1px solid #FF8D0A;
 }
 
@@ -29,7 +28,7 @@ li>a {
     color: white;
 }
 
-li > a::before {
+li>a::before {
     content: "";
     background-color: #FFD60A;
     transition: 0.5s ease-out;
@@ -38,16 +37,17 @@ li > a::before {
     position: absolute;
     left: 0;
     bottom: -3px;
-  }
-  li > a:hover::before {
+}
+
+li>a:hover::before {
     width: 100%;
-  }
+}
 
 
 li>a:hover {
     transition: all 1s;
     text-decoration: none;
-    color:#FFD60A;
+    color: #FFD60A;
 
 }
 
@@ -83,17 +83,19 @@ li>a:hover {
 /* Icon de la bar de nav */
 .navIcon {
     color: white;
-    font-size: 3rem;  
+    font-size: 3rem;
 }
+
 .navIcon:hover {
-    color:#FFD60A;
-    font-size: 3rem;  
+    color: #FFD60A;
+    font-size: 3rem;
 }
 
 .navIconText {
     font-size: x-small;
     padding-bottom: 3px;
 }
-.iconConnection{
+
+.iconConnection {
     height: 50%
 }

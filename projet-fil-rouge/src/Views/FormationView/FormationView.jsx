@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import CardsComp from '../../Components/Component/Formation/CardsComp/CardsComp';
-import OneCardComp from '../../Components/Component/Formation/OneCardComp/OneCardComp';
+import './FormationView.css'
 
 class FormationView extends Component {
     render() {
         return (
-            <div>
+            <div className='cardsDisplay'>
                 <CardsComp />
             </div>
         );

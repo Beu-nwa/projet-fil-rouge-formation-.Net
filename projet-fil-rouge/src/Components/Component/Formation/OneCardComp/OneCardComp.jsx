@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './OneCardComp.css';
 import {StarFill} from 'react-bootstrap-icons';
 import {StarHalf} from 'react-bootstrap-icons';
-import { Link } from 'react-router-dom';
- 
 
 //TODO :::  Incrémenter prix date etc.. Avec BDD//
 
@@ -16,7 +14,7 @@ class OneCardComp extends Component {
   <div className="card-description">
     <p className="text-title">Ma formation
     </p>
-    <button className='btn-post'>Postuler</button>
+    <button className='btn-post'>Plus de détails</button>
     <button className='btn-cart'>Ajouter au panier</button>
     <p className="text-body">Blabla ma formation de 6mois pour faire fullstack gnagnagna</p>
   </div>
