@@ -1,0 +1,99 @@
+.navBarContainer {
+    background-color: #001D3D;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    border-bottom: 1px solid #FF8D0A;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+li>a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+li > a::before {
+    content: "";
+    background-color: #FFD60A;
+    transition: 0.5s ease-out;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+  }
+  li > a:hover::before {
+    width: 100%;
+  }
+
+
+li>a:hover {
+    transition: all 1s;
+    text-decoration: none;
+    color:#FFD60A;
+
+}
+
+
+.navItem {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navItemBoxIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 32%;
+}
+
+.navItemIconText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    color: white;
+}
+
+
+/* Icon de la bar de nav */
+.navIcon {
+    color: white;
+    font-size: 3rem;  
+}
+.navIcon:hover {
+    color:#FFD60A;
+    font-size: 3rem;  
+}
+
+.navIconText {
+    font-size: x-small;
+    padding-bottom: 3px;
+}
+.iconConnection{
+    height: 50%
+}
