@@ -1,5 +1,5 @@
 .navBarContainer {
-    background-color: #001D3D;
+    background-color: var(--darkblue);
     width: 100%;
     height: 10vh;
     display: flex;
@@ -8,8 +8,6 @@
     font-size: 1.5rem;
     color: white;
     top: 0px;
-    position: absolute;
-    border-bottom: 1px solid #FF8D0A;
 }
 
 ul {
@@ -31,7 +29,7 @@ li>a {
 
 li>a::before {
     content: "";
-    background-color: #FFD60A;
+    background-color: var(--goldenyellow);
     transition: 0.5s ease-out;
     width: 0%;
     height: 2px;
@@ -48,7 +46,7 @@ li>a:hover::before {
 li>a:hover {
     transition: all 1s;
     text-decoration: none;
-    color: #FFD60A;
+    color: var(--goldenyellow);
 
 }
 
@@ -90,14 +88,15 @@ li>a:hover {
     font-size: 3rem;
 }
 
-.navIcon:hover {
-    color: #FFD60A;
+/* .navIcon:hover {
+    color: var(--goldenyellow);
     font-size: 3rem;
-}
+} */
 
 .navIconText {
     font-size: x-small;
     padding-bottom: 3px;
+    color: var(--darkorange);
 }
 
 .iconConnection {
@@ -105,9 +104,23 @@ li>a:hover {
 }
 
 .iconConnection > button{ 
+    border: none;
     background: none;
 	color: inherit;
-	border: none;
+	/* border: 2px var(--goldenyellow) solid; */
+    border-radius: 30%;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.iconConnection > button:hover{ 
+    transition: all 1s;
+    background: none;
+	color: inherit;
+    background-color: var(--goldenyellow);
+    border-radius: 50%;
 	padding: 0;
 	font: inherit;
 	cursor: pointer;

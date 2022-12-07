@@ -32,7 +32,9 @@ export default class OneCardComp extends Component {
                   <button className='btn-cart'> Sauvegarder </button>
                 </Link>
                 <div className="text-body">{forma.category}<br/>{forma.image}</div>
+                </div> </div>  </div>
             </React.Fragment>
+       
             ))
     );
   }

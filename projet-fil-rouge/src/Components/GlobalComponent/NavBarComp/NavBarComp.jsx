@@ -37,7 +37,7 @@ class NavBarComp extends Component {
                             <div className='navItemIconText'>
                                 <div className='iconConnection'>
 
-                                    <button><Link to="/log"><PersonFill className='navIcon' /></Link>
+                                    <button><Link to="/log"><PersonFillX className='navIcon' /></Link>
                                     <div className='navIconText'>Se deconnecter</div>
                                     </button>
                                     
@@ -72,7 +72,7 @@ class NavBarComp extends Component {
                             <div className='navItemIconText'>
                                 <div className='iconConnection'>
 
-                                    <button><Link to="/log"><PersonFill className='navIcon' /></Link>
+                                    <button><Link to="/log"><PersonFillX className='navIcon' /></Link>
                                     <div className='navIconText'>Se deconnecter</div>
                                     </button>
                                     
