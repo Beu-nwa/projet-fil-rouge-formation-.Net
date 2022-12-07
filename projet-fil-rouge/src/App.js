@@ -11,21 +11,20 @@ import Header from './Components/GlobalComponent/HeaderComp/HeaderComp';
 import Footer from './Components/GlobalComponent/FooterComp/FooterComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import LogView from './Views/LogView/LogView';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <BrowserRouter>
-        <Header/>
+          <Header />
           <main>
             <Routes>
               <Route path="/" element={<HomeView />} />
-              <Route path="/formation" element={<FormationView/>} />
-              <Route path="/log" element={<LogView/>} />
+              <Route path="/formation" element={<FormationView />} />
+              <Route path="/log" element={<LogView />} />
             </Routes>
-            <div className="container">
+            <div>
               <Outlet />
             </div>
           </main>

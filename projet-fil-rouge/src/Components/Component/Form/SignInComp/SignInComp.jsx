@@ -62,7 +62,7 @@ export default class SignInComp extends Component {
     }
     render() {
         return (
-            <div className='card p-2'>
+            <div className='p-2'>
                 <label className='input-group row my-2 d-flex align-items-center'>
                     <div className="col-5 d-flex align-items-start">Nom :</div>
                     <input onChange={(e) => this.changeFirstname(e)} className='col-7 input-group-text' name='nom' type="text" placeholder='Nom...' />
