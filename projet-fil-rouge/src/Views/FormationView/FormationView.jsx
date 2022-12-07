@@ -3,7 +3,7 @@ import CardsComp from '../../Components/Component/Formation/CardsComp/CardsComp'
 import FilterComp from '../../Components/Component/Formation/FilterComp/FilterComp';
 import './FormationView.css';
 
-class FormationView extends Component {
+export default class FormationView extends Component {
     render() {
         return (
             <div>
@@ -19,5 +19,3 @@ class FormationView extends Component {
         );
     }
 }
-
-export default FormationView;

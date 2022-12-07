@@ -4,8 +4,11 @@ import OneCardComp from '../OneCardComp/OneCardComp';
 class CardsComp extends Component {
     render() {
         return (
-            <div className='col col-9'>
+            <div className="container">
+
+            <div className='row'>
                 <OneCardComp />
+            </div>
             </div>
         );
     }
