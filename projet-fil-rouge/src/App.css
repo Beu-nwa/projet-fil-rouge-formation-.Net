@@ -1,3 +1,11 @@
+:root {
+  --darkblue: #001D3D;
+  --mediumblue: #003566;
+  --lightblue: #00B4D8;
+  --goldenyellow: #FFD60A;
+  --darkorange: #FF8D0A;
+}
+
 .App {
   text-align: center;
 }
@@ -32,8 +40,8 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-
