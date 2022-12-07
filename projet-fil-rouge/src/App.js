@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import FormationView from './Views/FormationView/FormationView';
+import LogView from './Views/LogView/LogView';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <header>
       </header>
       <main>
-        <FormationView />
+        <LogView />
       </main>
       <footer>
       </footer>
