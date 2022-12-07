@@ -36,10 +36,11 @@ class NavBarComp extends Component {
                         <div className='navItemBoxIcon'>
                             <div className='navItemIconText'>
                                 <div className='iconConnection'>
-                                    <Link to="/log"><PersonFillX className='navIcon' /></Link>
-                                </div>
-                                <div>
+
+                                    <button><Link to="/log"><PersonFill className='navIcon' /></Link>
                                     <div className='navIconText'>Se deconnecter</div>
+                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -68,15 +69,16 @@ class NavBarComp extends Component {
                             </div>
 
                             <div className='navItemBoxIcon'>
-                                <div className='navItemIconText'>
-                                    <div className='iconConnection'>
-                                        <Link to="/log"><PersonFillX className='navIcon' /></Link>
-                                    </div>
-                                    <div>
-                                        <div className='navIconText'>Se deconnecter</div>
-                                    </div>
+                            <div className='navItemIconText'>
+                                <div className='iconConnection'>
+
+                                    <button><Link to="/log"><PersonFill className='navIcon' /></Link>
+                                    <div className='navIconText'>Se deconnecter</div>
+                                    </button>
+                                    
                                 </div>
                             </div>
+                        </div>
 
                         </ul>
                     </div>
@@ -98,10 +100,11 @@ class NavBarComp extends Component {
                         <div className='navItemBoxIcon'>
                             <div className='navItemIconText'>
                                 <div className='iconConnection'>
-                                    <Link to="/log"><PersonFill className='navIcon' /></Link>
-                                </div>
-                                <div>
+
+                                    <button><Link to="/log"><PersonFill className='navIcon' /></Link>
                                     <div className='navIconText'>Se connecter</div>
+                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
