@@ -13,49 +13,147 @@ class NavBarComp extends Component {
     }
     render() {
         return (
-            <div className="navBarContainer">
-                <ul>
-                    <div className='navItem'>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                    </div>
-                    <div className='navItem'>
-                        <li>
-                            <Link to="/formation">Formations</Link>
-                        </li>
-                    </div>
-                    {
-                        this.state.activeUser.length === 0 ? (
 
-                            <div className='navItemBoxIcon'>
-                                <div className='navItemIconText'>
-                                    <div className='iconConnection'>
-                                        <Link to="/log"><PersonFill className='navIcon' /></Link>
-                                    </div>
-                                    <div>
-                                        <div className='navIconText'>Se connecter</div>
-                                    </div>
-                                </div>
+            this.state.activeUser === "moderateur" ? (
+                //Condition pour afficher la navBar en fonction du status de l'utilisateur         
+                <div className="navBarContainer">
+                    <ul>
+                        <div className='navItem'>
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                        </div>
+                        <div className='navItem'>
+                            <li>
+                                <Link to="/formation">Formations</Link>
+                            </li>
+                        </div>
+                        <div className='navItem'>
+                                <li>
+                                    <a href="">Ajout Formation</a>   {/* <Link to="/formation">Profil</Link>  */}
+                                </li>
                             </div>
-                        ) :
-                            (
+                        {
+                            this.state.activeUser.length === 0 ? (
+
                                 <div className='navItemBoxIcon'>
                                     <div className='navItemIconText'>
                                         <div className='iconConnection'>
-                                            <Link to="/log"><PersonFillX className='navIcon' /></Link>
+                                            <Link to="/log"><PersonFill className='navIcon' /></Link>
                                         </div>
                                         <div>
-                                            <div className='navIconText'>Se deconnecter</div>
+                                            <div className='navIconText'>Se connecter</div>
                                         </div>
                                     </div>
-
                                 </div>
-                            )
-                    }
-                </ul>
+                            ) :
+                                (
+                                    <div className='navItemBoxIcon'>
+                                        <div className='navItemIconText'>
+                                            <div className='iconConnection'>
+                                                <Link to="/log"><PersonFillX className='navIcon' /></Link>
+                                            </div>
+                                            <div>
+                                                <div className='navIconText'>Se deconnecter</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                        }
+                    </ul>
+                </div>
+                /////////////////////////////////////////////si l'utilisitaeur est stagiaire ou formateur ///
+            ) : this.state.activeUser === "formateur" || "stagiaire" ?
+                (
+                    <div className="navBarContainer">
+                        <ul>
+                            <div className='navItem'>
+                                <li>
+                                    <Link to="/">Home</Link>
+                                </li>
+                            </div>
+                            <div className='navItem'>
+                                <li>
+                                    <Link to="/formation">Formations</Link>
+                                </li>
+                            </div>
+                            <div className='navItem'>
+                                <li>
+                                    <a href="">Profil</a>   {/* <Link to="/formation">Profil</Link>  */}
+                                </li>
+                            </div>
+                            {
+                                this.state.activeUser.length === 0 ? (
 
-            </div>
+                                    <div className='navItemBoxIcon'>
+                                        <div className='navItemIconText'>
+                                            <div className='iconConnection'>
+                                                <Link to="/log"><PersonFill className='navIcon' /></Link>
+                                            </div>
+                                            <div>
+                                                <div className='navIconText'>Se connecter</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ) :
+                                    (
+                                        <div className='navItemBoxIcon'>
+                                            <div className='navItemIconText'>
+                                                <div className='iconConnection'>
+                                                    <Link to="/log"><PersonFillX className='navIcon' /></Link>
+                                                </div>
+                                                <div>
+                                                    <div className='navIconText'>Se deconnecter</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                            }
+                        </ul>
+                    </div>
+                ) :
+                ////////////////////NavBar par default (visiteur)
+                <div className="navBarContainer">
+                    <ul>
+                        <div className='navItem'>
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                        </div>
+                        <div className='navItem'>
+                            <li>
+                                <Link to="/formation">Formations</Link>
+                            </li>
+                        </div>
+                        {
+                            this.state.activeUser.length === 0 ? (
+
+                                <div className='navItemBoxIcon'>
+                                    <div className='navItemIconText'>
+                                        <div className='iconConnection'>
+                                            <Link to="/log"><PersonFill className='navIcon' /></Link>
+                                        </div>
+                                        <div>
+                                            <div className='navIconText'>Se connecter</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ) :
+                                (
+                                    <div className='navItemBoxIcon'>
+                                        <div className='navItemIconText'>
+                                            <div className='iconConnection'>
+                                                <Link to="/log"><PersonFillX className='navIcon' /></Link>
+                                            </div>
+                                            <div>
+                                                <div className='navIconText'>Se deconnecter</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                        }
+                    </ul>
+                </div>
 
         );
     }
