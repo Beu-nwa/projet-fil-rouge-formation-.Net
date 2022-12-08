@@ -6,33 +6,13 @@ h1,h2{
     margin: 0px;
     padding: 0px;
 }
-
-body{
-    font-family: 'Exo', sans-serif;
+.homeContainer{
+    position: fixed;
 }
-
-
-.context {
-    width: 100%;
-    position: absolute;
-    top:50vh;
-    
-}
-
-.context h1{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
-
 
 .area{
-    background: white;
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
-    height:100vh;
-    
-   
+    height:100vh;  
 }
 
 .circles{

@@ -9,16 +9,19 @@ class HomeComp extends Component {
     }
     render() {
         return (
-            <div>
-                <div class="area" >
-                    <h1>IT TRAINING</h1>
+            <div className='homeContainer'>
+                  
+                <div className="area" >
+
+                <h1>IT TRAINING</h1>
                     <h2>Votre site de formation</h2>
                     <p>Apprenez un métier d’avenir, grâce à IT Training</p>
                     <div>
                         <p>Vous apprendrez les compétences clés de votre futur métier en réalisant des projets tirés de cas concrets de la vie en entreprise.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia soluta, dicta ipsa aspernatur autem expedita possimus modi neque quae nemo porro nesciunt laboriosam, quis sequi minima incidunt alias omnis nihil!</p>
                     </div>
-                    <ul class="circles">
+
+                    <ul className="circles">
                         <li></li>
                         <li></li>
                         <li></li>
@@ -31,6 +34,7 @@ class HomeComp extends Component {
                         <li></li>
                     </ul>
                 </div >
+                
             </div>
         );
     }
