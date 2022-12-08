@@ -3,22 +3,32 @@
     width: 100%;
     height: 10vh;
     display: flex;
-    align-items: center;
+    justify-content: center;
     font-family: 'Comfortaa', cursive;
     font-size: 1.5rem;
     color: white;
     top: 0px;
 }
+.navBarUl{
+    width: 90%;
+    display: flex;
+    align-content: space-between;
+}
 
 ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     align-items: center;
+   justify-content: flex-start;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 70%;
     height: 100%;
+}
+li{
+    width: 100%;
+    display: flex;
+    
 }
 
 li>a {
@@ -50,48 +60,11 @@ li>a:hover {
 
 }
 
-
-.navItem {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.navItemBoxIcon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: flex-end;
-    height: 100%;
-    width: 100%;
-    margin-right: 1em;
-    margin-top: 1em;
-
-}
-
-.navItemIconText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 80%;
-    color: white;
-}
-
-
 /* Icon de la bar de nav */
 .navIcon {
     color: white;
     font-size: 3rem;
 }
-
-/* .navIcon:hover {
-    color: var(--goldenyellow);
-    font-size: 3rem;
-} */
 
 .navIconText {
     font-size: x-small;
@@ -99,11 +72,8 @@ li>a:hover {
     color: var(--darkorange);
 }
 
-.iconConnection {
-    height: 50%
-}
 
-.iconConnection > button{ 
+.navBarButton > button{ 
     border: none;
     background: none;
 	color: inherit;
@@ -115,7 +85,7 @@ li>a:hover {
 	outline: inherit;
 }
 
-.iconConnection > button:hover{ 
+.navBarButton > button:hover{ 
     transition: all 1s;
     background: none;
 	color: inherit;
