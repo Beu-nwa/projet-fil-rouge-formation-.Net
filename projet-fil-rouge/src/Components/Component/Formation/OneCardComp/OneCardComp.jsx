@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { formations } from '../../../../datas/formations';
 import CareScaleComponent from '../CareScaleComponent/CareScaleComponent';
 import './OneCardComp.css';
-import quantityLabel from '../CareScaleComponent/CareScaleComponent'
 
 ///TODO Difficulté en fonction de la BDD
 
