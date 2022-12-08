@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { StarFill } from 'react-bootstrap-icons';
-import { StarHalf } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom'
 import { formations } from '../../../../datas/formations';
+import CareScaleComponent from '../CareScaleComponent/CareScaleComponent';
 import './OneCardComp.css';
+import quantityLabel from '../CareScaleComponent/CareScaleComponent'
 
 ///TODO Difficulté en fonction de la BDD
 
@@ -14,12 +14,12 @@ export default class OneCardComp extends Component {
         <React.Fragment key={index}>
           <div className='col col-sm-5 col-lg-4 col-xl-3'>
             <div className="card" >
-              <div className="card-image"> <h2><StarFill color='orange' /> <StarFill color='orange' />  <StarFill color='orange' /> <StarFill color='orange' /> <StarHalf color='orange' /> </h2> <hr />
-                Durée : {forma.Durée} jours
+              <div className="card-image"> <CareScaleComponent note={forma.note} /> <hr />
+                Durée : {forma.durée} jours
                 <hr />
                 Prix : {forma.price}€
                 <hr />
-                Débute le : {forma.Sessions}
+                Débute le : {forma.sessions}
                 <hr />
                 Adresse : {forma.lieux}
               </div>
