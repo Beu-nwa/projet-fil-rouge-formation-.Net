@@ -14,96 +14,66 @@ class NavBarComp extends Component {
             this.props.activeUser[0].status === "moderateur" ? (
                 //Condition pour afficher la navBar en fonction du status de l'utilisateur         
                 <div className="navBarContainer">
+                <div className='navBarUl'>
                     <ul>
-                        <div className='navItem'>
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                        </div>
-                        <div className='navItem'>
-                            <li>
-                                <Link to="/formation">Formations</Link>
-                            </li>
-                        </div>
-                        <div className='navItem'>
-                            <li>
-                                <a href="">Ajout Formation</a>   {/* <Link to="/formation">Profil</Link>  */}
-                            </li>
-                        </div>
-
-                        <div className='navItemBoxIcon'>
-                            <div className='navItemIconText'>
-                                <div className='iconConnection'>
-
-
-                                    <button><Link to="/log"><PersonFillX className='navIcon' /></Link>
-                                    <div className='navIconText'>Se deconnecter</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/formation">Formations</Link>
+                        </li>
+                        <li>
+                            <a href="">Ajouter formation</a>   {/* <Link to="/formation">Profil</Link>  */}
+                        </li>
                     </ul>
                 </div>
+                <div className='navBarButton'>
+                    <button><Link to="/log"><PersonFillX className='navIcon' /></Link>
+                        <div className='navIconText'>Se deconnecter</div>
+                    </button>
+                </div>
+            </div>
                 /////////////////////////////////////////////si l'utilisitaeur est stagiaire ou formateur ///
             ) : this.props.activeUser[0].status === "formateur" || this.props.activeUser[0].status === "stagiaire" ?
                 (
                     <div className="navBarContainer">
+                    <div className='navBarUl'>
                         <ul>
-                            <div className='navItem'>
-                                <li>
-                                    <Link to="/">Home</Link>
-                                </li>
-                            </div>
-                            <div className='navItem'>
-                                <li>
-                                    <Link to="/formation">Formations</Link>
-                                </li>
-                            </div>
-                            <div className='navItem'>
-                                <li>
-                                    <a href="">Profil</a>   {/* <Link to="/formation">Profil</Link>  */}
-                                </li>
-                            </div>
-
-                            <div className='navItemBoxIcon'>
-                                <div className='navItemIconText'>
-                                    <div className='iconConnection'>
-                                    <button><Link to="/log"><PersonFillX className='navIcon' /></Link>
-                                    <div className='navIconText'>Se deconnecter</div>
-                                    </button>
-                                </div>
-                            </div>
-                    </div>
-                        </ul>
-                    </div>
-                ) :
-                ////////////////////NavBar par default (visiteur)
-                <div className="navBarContainer">
-                    <ul>
-                        <div className='navItem'>
                             <li>
                                 <Link to="/">Home</Link>
                             </li>
-                        </div>
-                        <div className='navItem'>
                             <li>
                                 <Link to="/formation">Formations</Link>
                             </li>
-                        </div>
-
-                        <div className='navItemBoxIcon'>
-                            <div className='navItemIconText'>
-                                <div className='iconConnection'>
-
-                                    <button><Link to="/log"><PersonFill className='navIcon' /></Link>
-                                        <div className='navIconText'>Se connecter</div>
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
+                            <li>
+                                <a href="">Profil</a>   {/* <Link to="/formation">Profil</Link>  */}
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='navBarButton'>
+                        <button><Link to="/log"><PersonFillX className='navIcon' /></Link>
+                            <div className='navIconText'>Se deconnecter</div>
+                        </button>
+                    </div>
+                </div>
+                ) :
+                ////////////////////NavBar par default (visiteur)
+                <div className="navBarContainer">
+                    <div className='navBarUl'>
+                        <ul>
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/formation">Formations</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='navBarButton'>
+                        <button><Link to="/log"><PersonFill className='navIcon' /></Link>
+                            <div className='navIconText'>Se connecter</div>
+                        </button>
+                    </div>
                 </div>
 
         );
@@ -113,4 +83,3 @@ class NavBarComp extends Component {
 
 
 export default NavBarComp;
-
