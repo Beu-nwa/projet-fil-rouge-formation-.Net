@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { formations } from '../../../../datas/formations';
 import CareScaleComponent from '../CareScaleComponent/CareScaleComponent';
 import './OneCardComp.css';
-import quantityLabel from '../CareScaleComponent/CareScaleComponent'
 
 ///TODO Difficulté en fonction de la BDD
 
@@ -29,7 +28,7 @@ export default class OneCardComp extends Component {
                 <div className="text-title">
                   {forma.name}
                 </div>
-                <Link to='/formation/' className='Linkbtn'>
+                <Link to='/training/' className='Linkbtn'>
                   <button className='btn-post'> Détails</button>
                 </Link>
                 <Link to='/cart' className='Linkbtn'>

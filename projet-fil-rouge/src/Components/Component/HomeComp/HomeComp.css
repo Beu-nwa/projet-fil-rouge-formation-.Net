@@ -8,6 +8,7 @@ h1,h2{
 }
 .homeContainer{
     position: fixed;
+    width: 100vw;
 }
 
 .area{

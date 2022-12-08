@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './LoginComp.css';
 import { Users } from '../../../../datas/Users.js';
 
 export default class LoginComp extends Component {
@@ -60,7 +59,7 @@ export default class LoginComp extends Component {
     }
     render() {
         return (
-            <div className='p-2'>
+            <div className='formContainer p-2'>
                 <label className='input-group row my-2 d-flex align-items-center'>
                     <div className="col-5 d-flex align-items-start">Email :</div>
                     <input id='mailInput' onChange={(e) => this.changeEmail(e)} className='col-7 input-group-text' type="email" placeholder='Email...' />
@@ -73,10 +72,10 @@ export default class LoginComp extends Component {
                 <div id='passwordAlert' className='d-none alert alert-danger mb-2'>Mot de passe incorrect</div>
                 <hr className='my-0' />
                 <div className='d-flex align-items-center justify-content-around my-3'>
-                    <button onClick={() => this.props.changeIsActive()} id='createAccountBtn'>
+                    <button onClick={() => this.props.changeIsActive()} id='changeIsActiveBtn'>
                         créer un compte...
                     </button>
-                    <button onClick={() => this.checkUser()} className='btn btn-outline-dark'>se connecter</button>
+                    <button onClick={() => this.checkUser()} className='btn btn-outline-light'>se connecter</button>
                 </div>
             </div>
         )
