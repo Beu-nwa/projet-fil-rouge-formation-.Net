@@ -1,3 +1,7 @@
+import csharp from '../assets/logo/csharplogo.png';
+
+
+
 export const formations = [
     {
         id: 1,
@@ -6,7 +10,7 @@ export const formations = [
         difficulte: 3,
         price: 249,
         created: "2019-06-16T16:54:46.308Z",
-        image: "",
+        image: '',
         durée: 30,
         sessions: "02/01/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
@@ -21,7 +25,7 @@ export const formations = [
         difficulte: 4,
         price: 299,
         created: "2019-06-16T16:54:56.308Z",
-        image: "",
+        image: csharp ,
         durée: 60,
         sessions: "04/04/2023",
         lieux : "80 rue boule jiminy 59800 Lille",

@@ -5,17 +5,17 @@ import { formations } from '../../../../datas/formations';
 const CareScaleComponent = ({ note }) => {
 
     const quantityLabel = [
-        <div> <Star color='orange' /> <Star color='orange' /> <Star color='orange' /> <Star color='orange' /> <Star color='orange' /> </div>,
-        <div> <StarHalf color='orange' /> <Star color='orange' /> <Star color='orange' /> <Star color='orange' /> <Star color='orange' /></div>,
-        <div> <StarFill color='orange' /> <Star color='orange' /> <Star color='orange' /> <Star color='orange' /> <Star color='orange' /></div>,
-        <div> <StarFill color='orange' /> <StarHalf color='orange' /> <Star color='orange' /> <Star color='orange' /> <Star color='orange' /></div>,
-        <div> <StarFill color='orange' /> <StarFill color='orange' /> <Star color='orange' /> <Star color='orange' /> <Star color='orange' /> </div>,
-        <div> <StarFill color='orange' /> <StarFill color='orange' /> <StarHalf color='orange' /> <Star color='orange' /> <Star color='orange' /> </div>,
-        <div> <StarFill color='orange' /> <StarFill color='orange' /> <StarFill color='orange' /> <Star color='orange' /> <Star color='orange' /></div>,
-        <div> <StarFill color='orange' /> <StarFill color='orange' /> <StarFill color='orange' /> <StarHalf color='orange' /> <Star color='orange' /></div>,
-        <div> <StarFill color='orange' /> <StarFill color='orange' /> <StarFill color='orange' /> <StarFill color='orange' /> <Star color='orange' /> </div>,
-        <div> <StarFill color='orange' /> <StarFill color='orange' /> <StarFill color='orange' /> <StarFill color='orange' /> <StarHalf color='orange' /></div>,
-        <div> <StarFill color='orange' /> <StarFill color='orange' /> <StarFill color='orange' /> <StarFill color='orange' /> <StarFill color='orange' /> </div>
+        <div> <Star color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> </div>,
+        <div> <StarHalf color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /></div>,
+        <div> <StarFill color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /></div>,
+        <div> <StarFill color='#FFD60A' /> <StarHalf color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /></div>,
+        <div> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> </div>,
+        <div> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarHalf color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /> </div>,
+        <div> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <Star color='#FFD60A' /> <Star color='#FFD60A' /></div>,
+        <div> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarHalf color='#FFD60A' /> <Star color='#FFD60A' /></div>,
+        <div> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <Star color='#FFD60A' /> </div>,
+        <div> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarHalf color='#FFD60A' /></div>,
+        <div> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> <StarFill color='#FFD60A' /> </div>
     ]
 
     return (
