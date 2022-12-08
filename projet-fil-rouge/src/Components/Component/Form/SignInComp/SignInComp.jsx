@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class SignInComp extends Component {
     constructor(props) {
@@ -62,7 +62,7 @@ export default class SignInComp extends Component {
     }
     render() {
         return (
-            <div className='p-2'>
+            <div className='formContainer p-2'>
                 <label className='input-group row my-2 d-flex align-items-center'>
                     <div className="col-5 d-flex align-items-start">Nom :</div>
                     <input onChange={(e) => this.changeFirstname(e)} className='col-7 input-group-text' name='nom' type="text" placeholder='Nom...' />
@@ -84,8 +84,11 @@ export default class SignInComp extends Component {
                     <input onChange={(e) => this.changeConfirmePassword(e)} id='confirmPasswordInput' className='col-7 input-group-text' type="password" placeholder='Confirmer mot de passe...' />
                 </label>
                 <hr />
-                <div className='d-flex align-items-center justify-content-end mb-3'>
-                    <button className='btn btn-outline-dark'>S'inscrire</button>
+                <div className='d-flex align-items-center justify-content-around my-3'>
+                    <button onClick={() => this.props.changeIsActive()} id='changeIsActiveBtn'>
+                        j'ai déjà un compte...
+                    </button>
+                    <button className='btn btn-outline-light'>S'inscrire</button>
                 </div>
             </div>
         )
