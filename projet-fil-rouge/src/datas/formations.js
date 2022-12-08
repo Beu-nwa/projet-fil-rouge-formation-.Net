@@ -11,7 +11,8 @@ export const formations = [
         sessions: "02/01/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
-        note : 5
+        note : 5,
+        certification : "Oui"
     },
     {
         id: 2,
@@ -25,7 +26,8 @@ export const formations = [
         sessions: "04/04/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
-        note: 7
+        note: 7,
+        certification : "Non"
 
     },
     {
@@ -40,7 +42,8 @@ export const formations = [
         sessions: "12/01/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
-        note : 9
+        note : 9,
+        certification : "Non"
     },
     {
         id: 4,
@@ -54,7 +57,8 @@ export const formations = [
         sessions: "20/10/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
-        note : 6
+        note : 6,
+        certification : "Oui"
     },
     {
         id: 5,
@@ -68,7 +72,8 @@ export const formations = [
         sessions: "09/05/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
-        note : 10
+        note : 10,
+        certification : "Oui"
     },
     {
     id: 6,
@@ -82,7 +87,8 @@ export const formations = [
         sessions: "20/12/2022",
         lieux : "80 rue boule jiminy 59800 Lille",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
-        note :3
+        note :3,
+        certification : "Non"
     },
     {
         id: 7,
@@ -96,7 +102,8 @@ export const formations = [
         sessions: "03/01/2023",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
         lieux : "80 rue boule jiminy 59800 Lille",
-        note : 7
+        note : 7,
+        certification : "Oui"
     },
     {
         id: 8,
@@ -110,7 +117,8 @@ export const formations = [
         sessions: "20/02/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
-        note : 8
+        note : 8,
+        certification : "Non"
     },
     {
         id: 9,
@@ -124,6 +132,7 @@ export const formations = [
         sessions: "10/07/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
-        note : 2
+        note : 2,
+        certification : "Non"
     }
 ]
