@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "Mr",
+        "firstname": "Pierre",
+        "lastname": "Pont",
+        "dateOfBirth": "05/11/1997",
+        "phone": "+33 6 87 34 17 86",
+        "email": "pierrepont@gmail.fr",
+        "password": "pierrepont",
+        "status": "moderateur",
+        "urlImg": " ",
+        "created": "2019-06-20T16:54:46.308Z",
+        "updated": " "
+    },
+    {
+        "id": 2,
+        "title": "Mr",
+        "firstname": "Nini",
+        "lastname": "Toto",
+        "dateOfBirth": "05/11/1997",
+        "phone": "+33 6 87 34 17 86",
+        "email": "totonini@gmail.fr",
+        "password": "totonini",
+        "status": "formateur",
+        "urlImg": " ",
+        "created": "2019-06-20T16:54:46.308Z",
+        "updated": " "
+    },
+    {
+        "id": 3,
+        "title": "Mr",
+        "firstname": "Combe",
+        "lastname": "Benoit",
+        "dateOfBirth": "05/11/1997",
+        "phone": "+33 6 87 34 17 86",
+        "email": "benoitcombe@gmail.fr",
+        "password": "benoitcombe",
+        "status": "stagiaire",
+        "urlImg": " ",
+        "created": "2019-06-20T16:54:46.308Z",
+        "updated": " "
+    },
+    {
+        "id": 4,
+        "title": "Mr",
+        "firstname": "Letellier",
+        "lastname": "Maxime",
+        "dateOfBirth": "05/11/1997",
+        "phone": "+33 6 87 34 17 86",
+        "email": "maximeletellier@gmail.fr",
+        "password": "maximeletellier",
+        "status": "stagiaire",
+        "urlImg": " ",
+        "created": "2019-06-20T16:54:46.308Z",
+        "updated": " "
+    },
+    {
+        "id": 5,
+        "title": "Mr",
+        "firstname": "Dubuis",
+        "lastname": "Simon",
+        "dateOfBirth": "05/11/1997",
+        "phone": "+33 6 87 34 17 86",
+        "email": "simondubuis@gmail.fr",
+        "password": "simondubuis",
+        "status": "stagiaire",
+        "urlImg": " ",
+        "created": "2019-06-20T16:54:46.308Z",
+        "updated": " "
+    }
+]

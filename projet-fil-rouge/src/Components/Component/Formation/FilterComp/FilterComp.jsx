@@ -30,39 +30,64 @@ export default class FilterComp extends Component {
                     </select>
                 </div>
                 <div className="row my-3 mx-0">
-                    <div class="input-group px-0">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Prix</span>
+                    <div className="input-group px-0">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text">Prix</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Minimum" aria-label="Username" />
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">€</span>
+                        <input type="text" className="form-control" placeholder="Minimum" aria-label="Username" />
+                        <div className="input-group-prepend">
+                            <span className="input-group-text">€</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Maximum" aria-label="Username" />
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">€</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="row my-3 mx-0">
-                    <div class="input-group px-0">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Durée</span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Minimum" aria-label="Username" />
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">jours</span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Maximum" aria-label="Username" />
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">jours</span>
+                        <input type="text" className="form-control" placeholder="Maximum" aria-label="Username" />
+                        <div className="input-group-prepend">
+                            <span className="input-group-text">€</span>
                         </div>
                     </div>
                 </div>
                 <div className="row my-3 mx-0">
-                    <span class="col">
-                        Certification.s
-                    </span>
+                    <div className="input-group px-0">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text">Durée</span>
+                        </div>
+                        <input type="text" className="form-control" placeholder="Minimum" aria-label="Username" />
+                        <div className="input-group-prepend">
+                            <span className="input-group-text">jours</span>
+                        </div>
+                        <input type="text" className="form-control" placeholder="Maximum" aria-label="Username" />
+                        <div className="input-group-prepend">
+                            <span className="input-group-text">jours</span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div className="d-flex justify-content-start align-items-center my-3 mx-0">
+                    <span className='mx-3'>Certification.s</span>
+                    <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <hr />
+                <div className="row my-3 mx-0">
+                    <div className="col col-12 text-start">
+                        <span className='ms-1'>Commence...</span>
+                    </div>
+                    <div className="row my-3 mx-0">
+                        <div className="input-group px-0">
+                            <div className="input-group-prepend">
+                                <span className="input-group-text">Au plus tôt</span>
+                            </div>
+                            <input type="date" className="form-control" placeholder="Minimum" aria-label="Username" />
+                        </div>
+                    </div>
+                    <div className="row mx-0">
+                        <div className="input-group px-0">
+                            <div className="input-group-prepend">
+                                <span className="input-group-text">Au plus tard</span>
+                            </div>
+                            <input type="date" className="form-control" placeholder="Minimum" aria-label="Username" />
+                        </div>
+                    </div>
                 </div>
             </div>
         )
