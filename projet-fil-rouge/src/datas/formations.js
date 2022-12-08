@@ -7,10 +7,11 @@ export const formations = [
         price: 249,
         created: "2019-06-16T16:54:46.308Z",
         image: "",
-        Durée: 30,
-        Sessions: "02/01/2023",
+        durée: 30,
+        sessions: "02/01/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
-        Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula."
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
+        note : 5
     },
     {
         id: 2,
@@ -20,10 +21,11 @@ export const formations = [
         price: 299,
         created: "2019-06-16T16:54:56.308Z",
         image: "",
-        Durée: 60,
-        Sessions: "04/04/2023",
+        durée: 60,
+        sessions: "04/04/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
-        Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula."
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
+        note: 7
 
     },
     {
@@ -34,11 +36,11 @@ export const formations = [
         price: 199,
         created: "2019-06-16T16:55:06.308Z",
         image: "",
-        Durée: 90,
-        Sessions: "12/01/2023",
+        durée: 90,
+        sessions: "12/01/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
-        Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula."
-
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
+        note : 9
     },
     {
         id: 4,
@@ -48,11 +50,11 @@ export const formations = [
         price: 149,
         created: "2019-06-16T16:55:16.308Z",
         image: "",
-        Durée: 120,
-        Sessions: "20/10/2023",
+        durée: 120,
+        sessions: "20/10/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
-        Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula."
-
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
+        note : 6
     },
     {
         id: 5,
@@ -62,11 +64,11 @@ export const formations = [
         price: 299,
         created: "2019-06-16T16:55:26.308Z",
         image: "",
-        Durée: 50,
-        Sessions: "09/05/2023",
+        durée: 50,
+        sessions: "09/05/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
-        Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula."
-
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
+        note : 10
     },
     {
     id: 6,
@@ -76,11 +78,11 @@ export const formations = [
         price: 299,
         created: "2019-06-16T16:55:36.308Z",
         image: "",
-        Durée: 60,
-        Sessions: "20/12/2022",
+        durée: 60,
+        sessions: "20/12/2022",
         lieux : "80 rue boule jiminy 59800 Lille",
-        Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula."
-
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
+        note :3
     },
     {
         id: 7,
@@ -90,11 +92,11 @@ export const formations = [
         price: 299,
         created: "2019-06-16T16:55:46.308Z",
         image: "",
-        Durée: 90,
-        Sessions: "03/01/2023",
-        Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
-        lieux : "80 rue boule jiminy 59800 Lille"
-
+        durée: 90,
+        sessions: "03/01/2023",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
+        lieux : "80 rue boule jiminy 59800 Lille",
+        note : 7
     },
     {
         id: 8,
@@ -104,11 +106,11 @@ export const formations = [
         price: 199,
         created: "2019-06-16T16:55:56.308Z",
         image: "",
-        Durée: 180,
-        Sessions: "20/02/2023",
+        durée: 180,
+        sessions: "20/02/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
-        Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula."
-
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
+        note : 8
     },
     {
         id: 9,
@@ -118,10 +120,10 @@ export const formations = [
         price: 149,
         created: "2019-06-16T16:56:06.308Z",
         image: "",
-        Durée: 180,
-        Sessions: "10/07/2023",
+        durée: 180,
+        sessions: "10/07/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
-        Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula."
-
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
+        note : 2
     }
 ]
