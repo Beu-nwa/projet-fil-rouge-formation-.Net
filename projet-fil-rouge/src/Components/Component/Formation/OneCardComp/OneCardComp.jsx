@@ -15,25 +15,27 @@ export default class OneCardComp extends Component {
           <div className='col col-sm-5 col-lg-4 col-xl-3'>
             <div className="card" >
               <div className="card-image"> <CareScaleComponent note={forma.note} /> <hr />
+                <div className='cate'>{forma.category}</div>
+                <hr />
                 Durée : {forma.durée} jours
                 <hr />
                 Prix : {forma.price}€
                 <hr />
                 Débute le : {forma.sessions}
                 <hr />
-                Adresse : {forma.lieux}
+                Certification : {forma.certification}
               </div>
               <div className="card-description">
                 <div className="text-title">
                   {forma.name}
                 </div>
-                <Link to='/formation/'>
+                <Link to='/formation/' className='Linkbtn'>
                   <button className='btn-post'> Détails</button>
                 </Link>
-                <Link to='/cart'>
+                <Link to='/cart' className='Linkbtn'>
                   <button className='btn-cart'> Sauvegarder </button>
                 </Link>
-                <div className="text-body">{forma.category}<br />{forma.image}</div>
+                <div className="text-body">{forma.image}</div>
               </div>
             </div>
           </div>
