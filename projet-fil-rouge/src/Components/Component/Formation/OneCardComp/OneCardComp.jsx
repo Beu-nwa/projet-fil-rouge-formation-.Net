@@ -28,7 +28,7 @@ export default class OneCardComp extends Component {
                 <div className="text-title">
                   {forma.name}
                 </div>
-                <Link to='/formation/' className='Linkbtn'>
+                <Link to='/training/' className='Linkbtn'>
                   <button className='btn-post'> Détails</button>
                 </Link>
                 <Link to='/cart' className='Linkbtn'>
