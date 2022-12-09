@@ -25,7 +25,7 @@ class HomeComp extends Component {
                 <div className='imgHome'>
                 </div>
                 <div className='btnLink'>
-                <Link to='/formation'>
+                <Link to='/training'>
                     <button className='btnforma'> Nos formations </button>
                 </Link>
                 </div>
