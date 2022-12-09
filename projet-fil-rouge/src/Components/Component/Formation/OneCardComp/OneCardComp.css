@@ -22,7 +22,6 @@
 }
 
 
-
 .card-image {
     height: 375px;
     width: 100%;
@@ -62,8 +61,8 @@
     font-weight: 700;
     visibility: visible;
   opacity: 1;
-  transition: opacity 2.5s linear;
-    animation: fadein 2.5s;
+  transition: opacity 2.9s linear;
+    animation: fadein 2.9s;
     
 }
 
@@ -92,7 +91,7 @@
     box-sizing:border-box;
     position:relative;    
     transition: all 2s;
-    
+
 }
 
 .card:hover .text-body {
@@ -110,7 +109,7 @@
     width: 100%;
     bottom: 0;
     border-radius: 1em 1em 1em 1em;
-    outline: solid 0.3px #FFD60A;
+    outline: solid 0.3px var(--goldenyellow);
     border: solid 0.09px #696969;
     padding: 1rem;
     
@@ -148,14 +147,14 @@
 
 .card:hover .card-image {
     outline: solid 1px #FFD60A;
-    box-shadow: 0 0 10px 10px #ffd60ad0;
+    box-shadow: 0 0 10px 10px var(--goldenyellow);
 }
 
 .logo{
-    animation: fadein 3.5s ease-out ;
-    -moz-animation: fadein 3.5s ease-out; 
-    -webkit-animation: fadein 3.5s ease-out; 
-    -o-animation: fadein 3.5s ease-out; 
+    animation: fadein 2.5s ease-out ;
+    -moz-animation: fadein 2.5s ease-out; 
+    -webkit-animation: fadein 2.5s ease-out; 
+    -o-animation: fadein 2.5s ease-out; 
 
 }
 .card:hover .logo{
