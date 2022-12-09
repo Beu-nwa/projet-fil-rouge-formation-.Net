@@ -27,7 +27,8 @@ class NavBarComp extends Component {
                     </ul>
                 </div>
                 <div className='navBarButton'>
-                    <button><Link to="/log"><PersonFillX className='navIcon' /></Link>
+                    <button>
+                        <Link to="/log"><PersonFillX className='navIcon' /></Link>
                         <div className='navIconText'>Se deconnecter</div>
                     </button>
                 </div>

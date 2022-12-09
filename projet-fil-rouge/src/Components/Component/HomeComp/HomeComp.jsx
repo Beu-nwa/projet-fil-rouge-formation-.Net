@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './HomeComp.css';
+import { Link } from 'react-router-dom'
 
 
 
@@ -19,8 +20,16 @@ class HomeComp extends Component {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia soluta, dicta ipsa aspernatur autem expedita possimus modi neque quae nemo porro nesciunt laboriosam, quis sequi minima incidunt alias omnis nihil!</p>
                     </div>
                 </div>
+
+
                 <div className='imgHome'>
-                </div>    
+                </div>
+                <div className='btnLink'>
+                <Link to='/formation'>
+                    <button className='btnforma'> Nos formations </button>
+                </Link>
+                </div>
+
                 <div className="area" >
            
                     <ul className="circles">
