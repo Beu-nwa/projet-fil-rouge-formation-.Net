@@ -9,7 +9,6 @@ class NavBarComp extends Component {
     }
 
     render() {
-
         return (
             this.props.activeUser[0].status === "moderateur" ? (
                 //Condition pour afficher la navBar en fonction du status de l'utilisateur         

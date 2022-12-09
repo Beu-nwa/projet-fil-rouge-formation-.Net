@@ -24,8 +24,6 @@ changeActiveUser = (user) => {
   this.setState ({
       activeUser: user
   })
-  console.log(this.state.activeUser)
-  console.log(user)
 }
 
   render() {
