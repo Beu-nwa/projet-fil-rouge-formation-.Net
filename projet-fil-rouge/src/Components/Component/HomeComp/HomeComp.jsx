@@ -10,7 +10,6 @@ class HomeComp extends Component {
     render() {
         return (
             <div className='homeContainer'>
-
                 <div className='textContainer'>
                     <h1>IT TRAINING</h1>
                     <h2>Votre site de formation</h2>
@@ -21,9 +20,9 @@ class HomeComp extends Component {
                     </div>
                 </div>
                 <div className='imgHome'>
-
-                </div>
+                </div>    
                 <div className="area" >
+           
                     <ul className="circles">
                         <li></li>
                         <li></li>
@@ -37,7 +36,6 @@ class HomeComp extends Component {
                         <li></li>
                     </ul>
                 </div >
-
             </div>
         );
     }
