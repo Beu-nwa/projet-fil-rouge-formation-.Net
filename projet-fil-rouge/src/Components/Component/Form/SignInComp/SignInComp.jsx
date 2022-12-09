@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { postUserApi, getUserApi } from '../../../../apiServices/usersApiService.js'
+import { postUserApi } from '../../../../apiServices/usersApiService.js'
 
 export default class SignInComp extends Component {
     constructor(props) {
@@ -64,6 +64,9 @@ export default class SignInComp extends Component {
     render() {
         return (
             <form onSubmit={this.createUser} className='formContainer p-2'>
+            <div className='row my-2 d-flex align-items-center'>
+                <h3 className='border-bottom pb-3'>Inscription</h3>
+            </div>
                 <div className="row">
                     <div className="col-5 d-flex align-items-start">Genre :</div>
                     <div className="col-7 d-flex align-items-start">

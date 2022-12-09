@@ -60,6 +60,9 @@ export default class LoginComp extends Component {
     render() {
         return (
             <div className='formContainer p-2'>
+                <div className='row my-2 d-flex align-items-center'>
+                    <h3 className='border-bottom pb-3'>Connection</h3>
+                </div>
                 <label className='input-group row my-2 d-flex align-items-center'>
                     <div className="col-5 d-flex align-items-start">Email :</div>
                     <input id='mailInput' onChange={(e) => this.changeEmail(e)} className='col-7 input-group-text' type="email" placeholder='Email...' />
