@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const __BASE_URL = 'http://localhost:7777/api';
+const __BASE_URL = 'http://localhost:1998/api';
 const __HEADERS = {
     'Accept': 'application/json',
     'Content-Type': 'application/json'
@@ -24,13 +24,14 @@ export const postTrainingApi = (async (training) => {
     bodyFormData.append('endDate', training.endDate);
     bodyFormData.append('location', training.location);
     bodyFormData.append('description', training.description);
-    bodyFormData.append('urlImg', training.urlImg);
+    // bodyFormData.append('urlImg', training.urlImg);
     return await axios({
         method: "post",
         url: __BASE_URL + "/training",
         data: bodyFormData,
         headers: {
-            "Content-Type": "multipart/form-data"
+            // "Content-Type": "multipart/form-data"
+            "Content-Type": "application/json"
         }
     }).catch(err => {
         alert(err);

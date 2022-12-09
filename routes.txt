@@ -4,6 +4,7 @@ postUser :          formulaire de création de compte                           
                     le modo devrait pouvoir ajouter un user                                 /user/add
 
 getUser :           affichage de tous les users dans un onglet userList du modo             /user
+                    display des users dans la "classe" de la formation concernée            /user
                     display des infos d'un stag ou forma dans l'onglet profil du user       /user/details/{:id}
 
 updateUser :        dans l'onglet userList du modo, possibilité de modifier un user         /user/update/{:id}

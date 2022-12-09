@@ -9,7 +9,8 @@
     color: white;
     top: 0px;
 }
-.navBarUl{
+
+.navBarUl {
     width: 90%;
     display: flex;
     align-content: space-between;
@@ -24,10 +25,11 @@ ul {
     width: 70%;
     height: 100%;
 }
-li{
+
+li {
     margin-right: 3em;
     display: flex;
-    
+
 }
 
 li>a {
@@ -67,36 +69,36 @@ li>a:hover {
 
 .navIconText {
     font-size: x-small;
-    padding-bottom: 3px;
+    padding-left: 1px;
     color: var(--darkorange);
 }
 
-.navBarButton{
+.navBarButton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navBarButton > button{ 
+.navBarButton>button {
     border: none;
     background: none;
-	color: inherit;
-	/* border: 2px var(--goldenyellow) solid; */
+    color: inherit;
     border-radius: 30%;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
-.navBarButton > button:hover{ 
+.navBarButton>button:hover {
     transition: all 1s;
-    background: none;
-	color: inherit;
     background-color: var(--goldenyellow);
     border-radius: 50%;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+}
+
+.navBarButton>button:hover>.navIconText {
+    transition: 1s;
+    background: white;
+    border-radius: 10px;
+    font-weight: bold;
 }

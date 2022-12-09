@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
-import './DisplayDetailsFormationComp.css'
+import './DisplayDetailsFormationComp.css';
+import { formations } from '../../../../datas/formations';
 
 class DisplayDetailsFormationComp extends Component {
     constructor(props) {
         super(props)
         this.state = {
-          
+
         }
     }
 
     render() {
-        console.log(this.props.state)
+       
         return (
-            <div>
-                <h1></h1>
-            </div>
+            
+                <React.Fragment>
+                    <div>
+                         <div className='cate'>{formations.category}  </div>
+                    </div>
+                </React.Fragment>
+
         );
     }
 }
