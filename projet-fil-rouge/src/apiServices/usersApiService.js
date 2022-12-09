@@ -24,6 +24,7 @@ export const postUserApi = (async (user) => {
     bodyFormData.append('password', user.password);
     bodyFormData.append('status', user.status);
     bodyFormData.append('urlImg', user.urlImg);
+    console.log(bodyFormData);
     return await axios({
         method: "post",
         url: __BASE_URL + "/user",

@@ -62,9 +62,9 @@ export default class FilterComp extends Component {
                 <hr />
                 <div className="d-flex justify-content-start align-items-center my-3 mx-0">
                     <span className='mx-3'>Certification.s</span>
-                    <label class="switch">
+                    <label className="switch">
                         <input type="checkbox" />
-                        <span class="slider"></span>
+                        <span className="slider"></span>
                     </label>
                 </div>
                 <hr />
