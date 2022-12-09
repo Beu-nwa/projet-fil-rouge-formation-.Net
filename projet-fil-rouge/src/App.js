@@ -11,6 +11,8 @@ import Header from './Components/GlobalComponent/HeaderComp/HeaderComp';
 import Footer from './Components/GlobalComponent/FooterComp/FooterComp';
 import LogView from './Views/LogView/LogView';
 import DetailsViews from './Views/DetailsViews/DetailsViews';
+import AddFormationView from './Views/AddFormationView/AddFormationView';
+import UserListView from './Views/UserListView/UserListView';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -35,9 +37,11 @@ changeActiveUser = (user) => {
           <main>
             <Routes>
               <Route path="/" element={<HomeView />} />
-              <Route path="/formation" element={<FormationView/>} />
-              <Route path="/log" element={<LogView changeActiveUser={this.changeActiveUser}/>}  />
-              <Route path="training/details/:id"  element={<DetailsViews/>}/>
+              <Route path="/user" element={<LogView changeActiveUser={this.changeActiveUser}/>}  />
+              <Route path="/training" element={<FormationView/>} />
+              <Route path="/training/details/:id"  element={<DetailsViews/>}/>
+              <Route path="/training/add"  element={<AddFormationView/>}/>
+              <Route path="/user/list"  element={<UserListView/>}/>
             </Routes>
             <div>
               <Outlet />

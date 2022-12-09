@@ -19,10 +19,13 @@ class NavBarComp extends Component {
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/formation">Formations</Link>
+                            <Link to="/training">Formations</Link>
                         </li>
                         <li>
-                            <a href="">Ajouter formation</a>   {/* <Link to="/formation">Profil</Link>  */}
+                            <Link to="/training/add">Ajouter formation</Link>
+                        </li>
+                        <li>
+                            <Link to="/user/list">utilisateurs</Link>
                         </li>
                     </ul>
                 </div>
@@ -43,15 +46,15 @@ class NavBarComp extends Component {
                                 <Link to="/">Home</Link>
                             </li>
                             <li>
-                                <Link to="/formation">Formations</Link>
+                                <Link to="/training">Formations</Link>
                             </li>
                             <li>
-                                <a href="">Profil</a>   {/* <Link to="/formation">Profil</Link>  */}
+                                <Link to="/user/details/:id">Détails</Link>
                             </li>
                         </ul>
                     </div>
                     <div className='navBarButton'>
-                        <button><Link to="/log"><PersonFillX className='navIcon' /></Link>
+                        <button><Link to="/user"><PersonFillX className='navIcon' /></Link>
                             <div className='navIconText'>Se deconnecter</div>
                         </button>
                     </div>
@@ -65,12 +68,12 @@ class NavBarComp extends Component {
                                 <Link to="/">Home</Link>
                             </li>
                             <li>
-                                <Link to="/formation">Formations</Link>
+                                <Link to="/training">Formations</Link>
                             </li>
                         </ul>
                     </div>
                     <div className='navBarButton'>
-                        <button><Link to="/log"><PersonFill className='navIcon' /></Link>
+                        <button><Link to="/user"><PersonFill className='navIcon' /></Link>
                             <div className='navIconText'>Se connecter</div>
                         </button>
                     </div>
