@@ -7,6 +7,10 @@ import './OneCardComp.css';
 ///TODO Difficulté en fonction de la BDD
 
 export default class OneCardComp extends Component {
+
+ 
+
+
   render() {
     return (
       formations.map((forma, index) => (
@@ -28,7 +32,7 @@ export default class OneCardComp extends Component {
                 <div className="text-title">
                   {forma.name}
                 </div>
-                <Link to='/training/' className='Linkbtn'>
+                <Link  to={`/training/details/${forma.id}`} className='Linkbtn'>
                   <button className='btn-post'> Détails</button>
                 </Link>
                 <Link to='/cart' className='Linkbtn'>
