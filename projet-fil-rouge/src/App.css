@@ -1,9 +1,10 @@
 :root {
-  --darkblue: #001D3D;
-  --mediumblue: #003566;
-  --lightblue: #00B4D8;
-  --goldenyellow: #FFD60A;
-  --darkorange: #FF8D0A;
+  --darkblue: rgb(0, 29, 61);
+  --darkblue05: rgba(0, 29, 61, 0.5);
+  --mediumblue: rgb(0, 53, 102);
+  --lightblue: rgb(0, 180, 216);
+  --goldenyellow: rgb(255, 214, 10);
+  --darkorange: rgb(255, 141, 10);
 }
 
 .App {
