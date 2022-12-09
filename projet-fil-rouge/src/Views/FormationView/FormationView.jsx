@@ -6,7 +6,7 @@ import './FormationView.css';
 export default class FormationView extends Component {
     render() {
         return (
-            <div>
+            
                 <div className='row m-0 p-0'>
                     <div className='cardsDisplay col col-9 m-0 p-0'>
                         <CardsComp />
@@ -15,7 +15,7 @@ export default class FormationView extends Component {
                         <FilterComp />
                     </div>
                 </div>
-            </div>
+            
         );
     }
 }

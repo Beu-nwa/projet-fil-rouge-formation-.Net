@@ -1,4 +1,12 @@
-import csharp from '../assets/logo/csharplogo.png';
+import Csharp from '../assets/logo/csharp.png';
+import VueJs from '../assets/logo/logo-vuejs.png';
+import SEO from '../assets/logo/logo-seo-premium.png';
+import JavaScript from '../assets/logo/logo-js.png';
+import HTML from '../assets/logo/logo-html-css.png';
+import Git from '../assets/logo/logo-git.png';
+import Sass from '../assets/logo/logo-sass.png';
+import ReactLogo from '../assets/logo/logo-react.png';
+import Angular from '../assets/logo/logo-angular.png';
 
 
 
@@ -10,7 +18,7 @@ export const formations = [
         difficulte: 3,
         price: 249,
         created: "2019-06-16T16:54:46.308Z",
-        image: '',
+        image: <img className='logo' src={SEO} alt='logoSEO' />,
         durée: 30,
         sessions: "02/01/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
@@ -25,7 +33,7 @@ export const formations = [
         difficulte: 4,
         price: 299,
         created: "2019-06-16T16:54:56.308Z",
-        image: csharp ,
+        image: <img className='logo' src={Csharp} alt='logoCsharp' />,
         durée: 60,
         sessions: "04/04/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
@@ -41,7 +49,7 @@ export const formations = [
         difficulte: 3,
         price: 199,
         created: "2019-06-16T16:55:06.308Z",
-        image: "",
+        image: <img className='logo' src={JavaScript} alt='logoJS' />,
         durée: 90,
         sessions: "12/01/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
@@ -56,7 +64,7 @@ export const formations = [
         difficulte: 2,
         price: 149,
         created: "2019-06-16T16:55:16.308Z",
-        image: "",
+        image: <img className='logo' src={HTML} alt='logoHTML' />,
         durée: 120,
         sessions: "20/10/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
@@ -71,7 +79,7 @@ export const formations = [
         difficulte: 3,
         price: 299,
         created: "2019-06-16T16:55:26.308Z",
-        image: "",
+        image: <img className='logo' src={ReactLogo} alt='logoreact' />,
         durée: 50,
         sessions: "09/05/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
@@ -86,7 +94,7 @@ export const formations = [
         difficulte: 2,
         price: 299,
         created: "2019-06-16T16:55:36.308Z",
-        image: "",
+        image: <img className='logo' src={VueJs} alt='LogoVue' />,
         durée: 60,
         sessions: "20/12/2022",
         lieux : "80 rue boule jiminy 59800 Lille",
@@ -101,7 +109,7 @@ export const formations = [
         difficulte: 4,
         price: 299,
         created: "2019-06-16T16:55:46.308Z",
-        image: "",
+        image: <img className='logo' src={Angular} alt='logoAngular' />,
         durée: 90,
         sessions: "03/01/2023",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo rhoncus ligula.",
@@ -116,7 +124,7 @@ export const formations = [
         difficulte: 3,
         price: 199,
         created: "2019-06-16T16:55:56.308Z",
-        image: "",
+        image: <img className='logo' src={Git} alt='logoGit' />,
         durée: 180,
         sessions: "20/02/2023",
         lieux : "80 rue boule jiminy 59800 Lille",
@@ -131,7 +139,7 @@ export const formations = [
         difficulte: 3,
         price: 149,
         created: "2019-06-16T16:56:06.308Z",
-        image: "",
+        image: <img className='logo' src={Sass} alt='logoSass' />,
         durée: 180,
         sessions: "10/07/2023",
         lieux : "80 rue boule jiminy 59800 Lille",

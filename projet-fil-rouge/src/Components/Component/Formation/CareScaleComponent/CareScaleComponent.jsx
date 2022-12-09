@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StarFill, StarHalf, Star } from 'react-bootstrap-icons';
 import { formations } from '../../../../datas/formations';
+import './CareScaleComponent.css'
 
 const CareScaleComponent = ({ note }) => {
 
