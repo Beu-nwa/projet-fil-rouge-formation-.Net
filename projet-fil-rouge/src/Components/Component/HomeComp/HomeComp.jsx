@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './HomeComp.css';
+import { Link } from 'react-router-dom'
 
 
 
@@ -10,7 +11,6 @@ class HomeComp extends Component {
     render() {
         return (
             <div className='homeContainer'>
-
                 <div className='textContainer'>
                     <h1>IT TRAINING</h1>
                     <h2>Votre site de formation</h2>
@@ -20,10 +20,18 @@ class HomeComp extends Component {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia soluta, dicta ipsa aspernatur autem expedita possimus modi neque quae nemo porro nesciunt laboriosam, quis sequi minima incidunt alias omnis nihil!</p>
                     </div>
                 </div>
-                <div className='imgHome'>
 
+
+                <div className='imgHome'>
                 </div>
+                <div className='btnLink'>
+                <Link to='/formation'>
+                    <button className='btnforma'> Nos formations </button>
+                </Link>
+                </div>
+
                 <div className="area" >
+           
                     <ul className="circles">
                         <li></li>
                         <li></li>
@@ -37,7 +45,6 @@ class HomeComp extends Component {
                         <li></li>
                     </ul>
                 </div >
-
             </div>
         );
     }
