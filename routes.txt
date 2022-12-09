@@ -1,0 +1,25 @@
+usersApi----------------------------------------------------------------------------------
+
+postUser :          formulaire de création de compte                                        /user/add
+                    le modo devrait pouvoir ajouter un user                                 /user/add
+
+getUser :           affichage de tous les users dans un onglet userList du modo             /user
+                    display des infos d'un stag ou forma dans l'onglet profil du user       /user/details/{:id}
+
+updateUser :        dans l'onglet userList du modo, possibilité de modifier un user         /user/update/{:id}
+                    possibilité au user de changer certaines de ses infos                   /user/update/{:id}
+
+deleteUser :        dans l'onglet userList du modo, possibilité de delete un user           /user/delete/{:id}
+                    possibilité de se désinscrire pour le user                              /user/delete/{:id}
+
+
+trainingApi----------------------------------------------------------------------------------
+
+postTraining :      le modo devrait pouvoir ajouter une formation                           /training/add
+
+getTraining :       display des formations dans l'onglet formations                         /training
+                    display de toutes les infos précises d'une formation dans datails       /training/details/{:id}
+
+updateTraining :    le modo devrait pouvoir ajouter une formation                           /training/add/{:id}
+
+deleteTraining :    le modo devrait pouvoir supprimer une formation                         /training/delete/{:id}

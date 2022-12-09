@@ -1,36 +1,21 @@
 import React, { Component } from 'react';
+import { postUserApi, getUserApi } from '../../../../apiServices/usersApiService.js'
 
 export default class SignInComp extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            firstname: "",
-            lastname: "",
-            email: "",
             passWord: "",
             confirmPassWord: "",
+            samePasswords: false,
         }
     }
-    changeFirstname = (e) => {
-        this.setState({
-            firstname: e.target.value
-        });
-    }
-    changeLastname = (e) => {
-        this.setState({
-            lastname: e.target.value
-        });
-    }
-    changeEmail = (e) => {
-        this.setState({
-            email: e.target.value
-        });
-    }
+
     changePassword = (e) => {
         this.setState({
             passWord: e.target.value
         });
-        this.comparePasswords(1, e);
+        this.comparePasswords(2, e);
     }
     changeConfirmePassword = (e) => {
         this.setState({
@@ -39,17 +24,13 @@ export default class SignInComp extends Component {
         this.comparePasswords(2, e);
     }
     comparePasswords = (x, e) => {
-        switch (x) {
-            case 1: e.target.value === this.state.confirmPassWord ? this.changePasswordColors("ok") : this.changePasswordColors("nok");
-                break;
-            case 2: e.target.value === this.state.passWord ? this.changePasswordColors("ok") : this.changePasswordColors("nok");
-                break;
-            default: console.log('la fonction comparePasswords a été déclanché sans passer par les cases');
-                break;
-        }
+        let result = false;
+        (x === 1 && e.target.value === this.state.confirmPassWord) || (x === 2 && e.target.value === this.state.passWord) ? result = true : result = false;
+        this.setState({ samePasswords: result });
+        this.changePasswordColors(result);
     }
     changePasswordColors = (x) => {
-        return x === "ok" ? (
+        return x === true ? (
             document.getElementById('passwordInput').classList.remove("border-danger"),
             document.getElementById('confirmPasswordInput').classList.remove("border-danger"),
             document.getElementById('passwordInput').classList.add("border-success"),
@@ -60,28 +41,73 @@ export default class SignInComp extends Component {
             document.getElementById('passwordInput').classList.add("border-danger"),
             document.getElementById('confirmPasswordInput').classList.add("border-danger"));
     }
+
+    createUser = (e) => {
+        e.preventDefault();
+        let title = e.target['MrRadio'].checked ? "Mr" : e.target['MmeRadio'].checked ? "Mme" : "Autre"
+        let lastname = e.target['lnInput'].value;
+        let firstname = e.target['fnInput'].value;
+        let dateOfBirth = e.target['dobInput'].value;
+        let email = e.target['emailInput'].value;
+        let password = e.target['passwordInput'].value;
+        let phone = e.target['phoneInput'].value;
+        if (lastname !== "" && firstname !== "" && dateOfBirth !== new Date() && phone !== "" && email !== "" && password !== "" && this.state.samePasswords === true) {
+            const newPerson = { title, lastname, firstname, dateOfBirth, phone, email, password };
+            this.AddUser(newPerson);
+        } else alert("Veuillez remplir tous les champs!");
+    }
+    AddUser = async (newUser) => {
+        let response = await postUserApi(newUser);
+        console.log(response);
+        // this.FetchContact(); 
+    }
     render() {
         return (
-            <div className='formContainer p-2'>
+            <form onSubmit={this.createUser} className='formContainer p-2'>
+                <div className="row">
+                    <div className="col-5 d-flex align-items-start">Genre :</div>
+                    <div className="col-7 d-flex align-items-start">
+                        <div className="form-check form-check-inline">
+                            <label className="form-check-label" htmlFor="MrRadio">Mr</label>
+                            <input className="form-check-input" type="radio" name="titlesRadio" id="MrRadio" value="Mr" />
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <label className="form-check-label" htmlFor="MmeRadio">Mme</label>
+                            <input className="form-check-input" type="radio" name="titlesRadio" id="MmeRadio" value="Mme" />
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <label className="form-check-label" htmlFor="otherRadio">Autre</label>
+                            <input className="form-check-input" type="radio" name="titlesRadio" id="otherRadio" defaultChecked value="Autre" />
+                        </div>
+                    </div>
+                </div>
                 <label className='input-group row my-2 d-flex align-items-center'>
                     <div className="col-5 d-flex align-items-start">Nom :</div>
-                    <input onChange={(e) => this.changeFirstname(e)} className='col-7 input-group-text' name='nom' type="text" placeholder='Nom...' />
+                    <input id='lnInput' className='col-7 input-group-text' name='nom' type="text" placeholder='Nom...' />
                 </label>
                 <label className='input-group row my-2 d-flex align-items-center'>
                     <div className="col-5 d-flex align-items-start">Prénom :</div>
-                    <input onChange={(e) => this.changeLastname(e)} className='col-7 input-group-text' name='prenom' type="text" placeholder='Prénom...' />
+                    <input id='fnInput' className='col-7 input-group-text' name='prenom' type="text" placeholder='Prénom...' />
+                </label>
+                <label className='input-group row my-2 d-flex align-items-center'>
+                    <div className="col-5 d-flex align-items-start">Date de naissance :</div>
+                    <input id='dobInput' className='col-7 input-group-text' name='dob' type="date" />
+                </label>
+                <label className='input-group row my-2 d-flex align-items-center'>
+                    <div className="col-5 d-flex align-items-start">Numéro de téléphone :</div>
+                    <input id='phoneInput' className='col-7 input-group-text' name='phone' type="number" placeholder='numéro de téléphone...' />
                 </label>
                 <label className='input-group row my-2 d-flex align-items-center'>
                     <div className="col-5 d-flex align-items-start">Email :</div>
-                    <input onChange={(e) => this.changeEmail(e)} className='col-7 input-group-text' name='email' type="email" placeholder='Email...' />
+                    <input id='emailInput' className='col-7 input-group-text' name='email' type="email" placeholder='Email...' />
                 </label>
                 <label className='input-group row my-2 d-flex align-items-center'>
                     <div className="col-5 d-flex align-items-start">Mot de passe :</div>
-                    <input onChange={(e) => this.changePassword(e)} id='passwordInput' className='col-7 input-group-text' name='password' type="password" placeholder='Mot de passe...' />
+                    <input id='passwordInput' onChange={(e) => this.changePassword(e)} className='col-7 input-group-text' name='password' type="password" placeholder='Mot de passe...' />
                 </label>
                 <label className='input-group row my-2 d-flex align-items-center'>
                     <div className="col-5 d-flex align-items-start">Confirmer :</div>
-                    <input onChange={(e) => this.changeConfirmePassword(e)} id='confirmPasswordInput' className='col-7 input-group-text' type="password" placeholder='Confirmer mot de passe...' />
+                    <input id='confirmPasswordInput' onChange={(e) => this.changeConfirmePassword(e)} className='col-7 input-group-text' type="password" placeholder='Confirmer mot de passe...' />
                 </label>
                 <hr />
                 <div className='d-flex align-items-center justify-content-around my-3'>
@@ -90,7 +116,8 @@ export default class SignInComp extends Component {
                     </button>
                     <button className='btn btn-outline-light'>S'inscrire</button>
                 </div>
-            </div>
+            </form>
         )
     }
 }
+// document.getElementById('testnom').value
