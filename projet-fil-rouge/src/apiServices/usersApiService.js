@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const __BASE_URL = 'http://localhost:7777/api';
+const __BASE_URL = 'http://localhost:2018/api';
 const __HEADERS = {
     'Accept': 'application/json',
     'Content-Type': 'application/json'
@@ -14,6 +14,8 @@ export const getUserApi = (async () => {
 });
 
 export const postUserApi = (async (user) => {
+    console.log("user : ");
+    console.log(user);
     let bodyFormData = new FormData();
     bodyFormData.append('title', user.title);
     bodyFormData.append('firstname', user.firstname);
@@ -22,15 +24,17 @@ export const postUserApi = (async (user) => {
     bodyFormData.append('phone', user.phone);
     bodyFormData.append('email', user.email);
     bodyFormData.append('password', user.password);
-    bodyFormData.append('status', user.status);
-    bodyFormData.append('urlImg', user.urlImg);
+    // bodyFormData.append('status', user.status);
+    // bodyFormData.append('urlImg', user.urlImg);
+    console.log(bodyFormData.length>0);
     console.log(bodyFormData);
     return await axios({
         method: "post",
         url: __BASE_URL + "/user",
         data: bodyFormData,
         headers: {
-            "Content-Type": "multipart/form-data"
+            // "Content-Type": "multipart/form-data"
+            "Content-Type": "application/json"
         }
     }).catch(err => {
         alert(err);
