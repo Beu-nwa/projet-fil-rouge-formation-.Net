@@ -17,13 +17,13 @@ export default class LogsComp extends Component {
     }
     render() {
         return this.state.isActive ? (
-            <div className='row justify-content-center'>
+            <div className='row justify-content-center gx-0'>
                 <div className='col col-sm-11 col-md-8 col-lg-5 col-xl-4 col-xxl-3 my-4'>
                     <LoginComp changeActiveUser={this.props.changeActiveUser} changeIsActive={this.changeIsActive} />
                 </div>
             </div>
         ) : (
-            <div className='row justify-content-center'>
+            <div className='row justify-content-center gx-0'>
                 <div className='col col-sm-11 col-md-8 col-lg-6 col-xl-4 col-xxl-3 my-4 mx-auto'>
                     <SignInComp changeIsActive={this.changeIsActive} />
                 </div >
