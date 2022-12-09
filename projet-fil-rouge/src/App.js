@@ -33,7 +33,7 @@ changeActiveUser = (user) => {
     return (
       <div className="App">
         <BrowserRouter>
-        <Header activeUser={this.state.activeUser}/>
+        <Header activeUser={this.state.activeUser} changeActiveUser={this.changeActiveUser}/>
           <main>
             <Routes>
               <Route path="/" element={<HomeView />} />

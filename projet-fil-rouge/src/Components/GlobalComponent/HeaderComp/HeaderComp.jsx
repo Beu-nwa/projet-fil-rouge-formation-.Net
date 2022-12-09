@@ -9,7 +9,7 @@ class HeaderComp extends Component {
     render() {
         return (
             <header>
-                <NavBarComp activeUser={this.props.activeUser} />
+                <NavBarComp activeUser={this.props.activeUser} changeActiveUser={this.props.changeActiveUser} />
             </header>
         );
     }
